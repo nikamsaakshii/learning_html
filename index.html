@@ -6,54 +6,109 @@
 </head>
 
 <body>
-    <header>
-        <!-- <nav>
-            <a href="Home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="Services.html">Services.html</a>
-            <a href="product.html">product.html</a>
-            <a href="contact.html">contact.html</a>
-        </nav> -->
+   <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
 
-        <h1>H<sub>2</sub>so<sub>4</sub></sub></h1>
-        </h1>
-        <h1>CO<sub>2</sub></h1>
-        <H1>H<sub>2</sub>O</H1>
-        <h1>CH<sub>4</sub></h1>
-        <h1>H<sub>2</sub></h1>
-        <!-- <heading Tag start> -->
-        <h1>Hello welcome to FCT &#128640;</h1>
-        <h2>Welcome in class</h2>
-        <h3>Sakshi Nikam </h3>
-        <h4>Welcome to the world of coding</h4>
-        <h5>Let's learn together</h5>
-        <h6>Happy Coding!</h6>
-        <!-- </heading Tag end> -->
-        <pre>Lorem ipsum dolor, sit amet <b>consectetur</b> adipisicing elit. At debitis perferendis, odit quia sit fugiat, recusandae voluptates, adipisci ea nobis illum? Architecto, laboriosam commodi? Omnis obcaecati cumque <mark>enim</mark> distinctio quam.</pre>
-        <p>Lorem ipsum <em>dolor</em> sit amet consectetur adipisicing elit. Culpa sint facilis explicabo
-            <i>deleniti</i> assumenda suscipit libero, tempore molestias aperiam voluptate provident
-            <strong>laudantium</strong> quo quae facere! Optio ipsa exercitationem labore eaque.
+        .hero-section {
+            background-image: Url("Images/bg1.jpg");
+            /* ✅ Ensure path is correct */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        marquee h1 {
+            margin: 0;
+            padding: 10px 0;
+            color: #000;
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff4081;
+        }
+
+        .feature-section {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .feature-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .feature-section p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+    <section class="hero-section">
+        <header>
+            <marquee loop="2" bahavior="alternative" scrollamount="10" height="50px" bgcolor="LightBlue">
+                <h1>Welcome to Ranka Jewellers</h1>
+            </marquee>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="product.html">Product</a>
+                <a href="Services.html">Services</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+    </section>
+    <div class="feature-section">
+        <h2>Why Choose Ranka Jewellers?</h2>
+        <p>
+            Explore a wide range of traditional and modern jewellery designs with guaranteed purity and authenticity. We
+            provide custom-made jewellery and exclusive services for every special occasion.
         </p>
-        <img src="Images/social.1.webp" alt="social media" usemap="#social">
+         <footer  align="center">
+             <h3>ranka675@gmail.com</h3>
+        &copy; 2025 Ranka Jewellers. All rights reserved.
+    </footer>
+    </div>
+</body>
 
-        <map name="social">
-            <area shape="circle" coords="168,175,158" href="https://www.facebook.com/" target="_blank">
-            <area shape="circle" coords="588,168,159" href="https://www.instagram.com/" target="_blank">
-            <area shape="circle" coords="1020,174,144" href="https://www.youtube.com/" target="_blank">
-        </map>
-        <img src="Images/social.2.jpg" alt="social media" usemap="#social">
-        <map name="social">
-            <area shape="rect" coords="37,32,90,31" href="https://www.facebook.com/" target="_blank">
-        </map>
-        <marquee direction="2" behavior="alternative" height="200px" bgcolor="yellow">
-            <h1>welcome</h1>
-        </marquee>
-
-        
-         <marquee direction="right" bahavior="alternative" scrollamount="2"height="200px" bgcolor="yellow"><h1>welcome</h1>
-        </marquee>
-        <marquee loop="2" behavior="alternative" scrollamount="20"height="200px" bgcolor="yellow">
-            <h1>welcome</h1>
-        </marquee>
-        
+       
 </html>
